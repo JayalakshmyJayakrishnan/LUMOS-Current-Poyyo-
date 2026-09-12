@@ -91,7 +91,7 @@ Initial Screen
 Output
 <img width="997" height="671" alt="image" src="https://github.com/user-attachments/assets/7543c0a8-7c64-4d39-ba45-09ea01b271d2" />
 
-*The output shows whether or not the KTU student can study on the terrace with enough light and wind and if not the option to call KSEB.*
+*The output shows whether or not the user can study on the terrace with enough light and wind and if not the option to call KSEB.*
 
 Moon-Eater
 <img width="732" height="646" alt="image" src="https://github.com/user-attachments/assets/c8f24816-9ccc-4a03-a834-ccb131c920fa" />
