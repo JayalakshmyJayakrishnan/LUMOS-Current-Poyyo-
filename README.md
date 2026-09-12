@@ -109,8 +109,8 @@ Moon-Eater
 *The video shows the initial fetch of the location and time from the user and then uses them to calculate the lux values to find out whether the student can study or call KSEB*
 
 # Additional Demos
-https://stalwart-gaufre-89adb2.netlify.app
-*deployed link*
+*Deployed Link:* https://stalwart-gaufre-89adb2.netlify.app
+
 ## Team Contributions
 - Jayalakshmy Jayakrishnan: Final product and UI
 - Roshan Robin: Initial Work and Documentation
