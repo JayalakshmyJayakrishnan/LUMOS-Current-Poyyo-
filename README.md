@@ -1,45 +1,48 @@
-<img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
+<img width="1280" height="640" alt="git (1)" src="[https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd](https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd)" />
 
-
-
-# LUMOS-CURRENT POYYO?🎯
-
+# LUMOS — CURRENT POYYO? 🎯
 
 ## Basic Details
-### Team Name: SeveralSnape
 
+### Team Name
+**SeveralSnape**
 
 ### Team Members
-- Team Lead: Roshan Robin - ASIET, Kalady
-- Member 2: Jayalakshmy Jayakrishnan - ASIET, Kalady
+* **Team Lead:** Roshan Robin — ASIET, Kalady
+* **Member:** Jayalakshmy Jayakrishnan — ASIET, Kalady
+
+---
 
 ### Project Description
 Our project finds out whether an average KTU student is able to study outside in the moonlight when KSEB cuts the power. We take time, location, moon cycle, and weather conditions to see if we should depend on nature before on the state electricity board.
 
 ### The Problem (that doesn't exist)
 Have you ever came home late from your college with a ton of assignments and record to complete only to find theres no electricity at home. Well, Before you call KSEB to complain you should remember "Where there is a will there is a way". Maybe KSEB is not the issue. Maybe we are being too quick to call KSEB before thinking of other options.
+
 ### The Solution (that nobody asked for)
 We have made Lumos especially for those poor KTU students with no inverter at home. We take the moon cycle and weather conditions to see if there is enough moonlight at the user's location for them to do their work on the terrace. We also measure the wind speed to ensure that the user knows how breezy the terrace is. This is to ensure that our average KTU student is not affected by the KSEB power cuts.
+
+---
+
 ## Technical Details
-# Technical Details
 
-## Technologies / Components Used
+### Technologies / Components Used
 
-### Software
+* **HTML5** — Application structure and interface
+* **CSS3** — UI styling, animations, and responsive layout
+* **JavaScript** — Application logic, API communication, and decision-making
+* **SunCalc** — Astronomical calculations including moon position, altitude, and phase
+* **Open-Meteo** — Weather and environmental data
+* **Browser Geolocation API** — Obtaining the user's location
+* **Netlify** — Static web hosting and deployment
 
-- **HTML5** — Application structure and interface
-- **CSS3** — UI styling, animations and responsive layout
-- **JavaScript** — Application logic, API communication and decision-making
-- **SunCalc** — Astronomical calculations including moon position, altitude and phase
-- **Open-Meteo** — Weather and environmental data
-- **Browser Geolocation API** — Obtaining the user's location
-- **Netlify** — Deployment
+---
 
-# Software Implementation
+## Software Implementation
 
 Lumos is implemented as a **standalone client-side web application**. There is no dedicated backend server.
 
-The application follows a simple data pipeline:
+### Pipeline Architecture
 
 ```text
 User
@@ -48,23 +51,23 @@ User
 Browser Location + Current Time
   │
   ├──────────────► SunCalc
-  │                 │
-  │                 ├── Moon Phase
-  │                 ├── Moon Altitude
-  │                 └── Moon Position
+  │                  │
+  │                  ├── Moon Phase
+  │                  ├── Moon Altitude
+  │                  └── Moon Position
   │
   └──────────────► Open-Meteo
-                    │
-                    ├── Cloud Coverage
-                    └── Wind Speed
-                              │
-                              ▼
+                     │
+                     ├── Cloud Coverage
+                     └── Wind Speed
+                             │
+                             ▼
                      Condition Analysis
-                              │
-                              ▼
+                             │
+                             ▼
                     Study Feasibility
-                              │
-                              ▼
+                             │
+                             ▼
                   ┌────────────────────┐
                   │   LUMOS DECISION   │
                   ├────────────────────┤
