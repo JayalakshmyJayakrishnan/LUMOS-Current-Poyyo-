@@ -21,19 +21,57 @@ Have you ever came home late from your college with a ton of assignments and rec
 ### The Solution (that nobody asked for)
 We have made Lumos especially for those poor KTU students with no inverter at home. We take the moon cycle and weather conditions to see if there is enough moonlight at the user's location for them to do their work on the terrace. We also measure the wind speed to ensure that the user knows how breezy the terrace is. This is to ensure that our average KTU student is not affected by the KSEB power cuts.
 ## Technical Details
-### Technologies/Components Used
-For Software:
-- HTML5, CSS, JavaScript
-- Suncalc
-- OpenMeteo
+# Technical Details
 
-### Implementation
-For Software: 
-# Installation
-Standalone HTML file just download and open.
+## Technologies / Components Used
 
-# Run
-Standalone HTML file just download and open.
+### Software
+
+- **HTML5** — Application structure and interface
+- **CSS3** — UI styling, animations and responsive layout
+- **JavaScript** — Application logic, API communication and decision-making
+- **SunCalc** — Astronomical calculations including moon position, altitude and phase
+- **Open-Meteo** — Weather and environmental data
+- **Browser Geolocation API** — Obtaining the user's location
+- **Netlify** — Deployment
+
+# Software Implementation
+
+Lumos is implemented as a **standalone client-side web application**. There is no dedicated backend server.
+
+The application follows a simple data pipeline:
+
+```text
+User
+  │
+  ▼
+Browser Location + Current Time
+  │
+  ├──────────────► SunCalc
+  │                 │
+  │                 ├── Moon Phase
+  │                 ├── Moon Altitude
+  │                 └── Moon Position
+  │
+  └──────────────► Open-Meteo
+                    │
+                    ├── Cloud Coverage
+                    └── Wind Speed
+                              │
+                              ▼
+                     Condition Analysis
+                              │
+                              ▼
+                    Study Feasibility
+                              │
+                              ▼
+                  ┌────────────────────┐
+                  │   LUMOS DECISION   │
+                  ├────────────────────┤
+                  │ STUDY OUTSIDE      │
+                  │ WAIT               │
+                  │ CALL KSEB          │
+                  └────────────────────┘
 
 ### Project Documentation
 For Software:
